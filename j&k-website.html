@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width = initial-scale=1.0">
@@ -19,7 +25,7 @@
                         <li class="goals"><a href="#" class="goals">goals</a></li>
                         <li class="contact-us"><a href="#" class="contact-us">contact-us</a></li>
                     </ul>
-                    <img src="#" alt="nav-burger" class="nav-burger">
+                    <img src="images/menu-horizontal.png" alt="nav-burger" class="nav-burger">
             </div>
         </nav>
     </header>
@@ -36,11 +42,45 @@
         <div class="container-about">
             <div class="left-col-about">
                 <h1 class="jason">Hello, I'm Jason.</h1>
-                <img src="#" alt="Picture of Jason">
+                <img src="images/man.png" alt="Picture of Jason">
             </div>
             <div class="right-col-about">
                 <h1 class="kait">Hi, I'm Kaitlyn.</h1>
-                <img src="#" alt="Picture of Kaitlyn">
+                <img src="images/woman.png" alt="Picture of Kaitlyn">
+            </div>
+        </div>
+    </section>
+    <section class="goals-section">
+        <div class="jason-left">
+            <h1 class="jason">Jason</h1>
+        </div>
+        <div class="kait-right">
+            <h1 class="kait">Kaitlyn</h1>
+        </div>
+    </section>
+    <section class="contact-us-section">
+        <h1 class="contact-us-h1">Contact Us.</h1>
+        <div class="wrapper">
+            <div class="contact-jason">
+                <h1 class="Jason-h1-contact">Jason</h1>
+                <form action="contact">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
+                    <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
+                    <img src="#" alt="phone"><h3 class="phone-number">Reach Jason : <span class="number"><a href="tel:+1(512)738-4677">+1(512)738-4677</a></span></h2>
+    
+                </form>
+            </div>
+            <div class="contact-kait">
+                <h1 class="Kait-h1-contact">Kaitlyn</h1>
+                <form action="contact">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
+                    <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
+                    <img src="#" alt="phone"><h3 class="phone-number">Reach Kaitlyn : <span class="number"><a href="tel:+1(203)360-6534">+1(203)360-6534</a></span></h2>
+                </form>
             </div>
         </div>
     </section>
