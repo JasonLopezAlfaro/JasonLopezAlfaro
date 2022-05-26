@@ -13,77 +13,100 @@
     <title>Jason and Kait.</title>
 </head>
 <body>
-    <header>
+    <header role="banner" class="banner">
         <nav class="nav-container">
             <div class="left-col-head">
                 <a href="#"><img src="#" alt="LOGO"></a>
             </div>
-            <div class="right-col-head">
+            <nav class="right-col-head">
+                <div class="right-col-list">
                     <ul class="list-container">
-                        <li class="home"><a href="#" class="home">home</a></li>
-                        <li class="about-us"><a href="#" class="about-us">about-us</a></li>
-                        <li class="goals"><a href="#" class="goals">goals</a></li>
-                        <li class="contact-us"><a href="#" class="contact-us">contact-us</a></li>
+                        <li class="Home"><a href="#" class="home">home</a></li>
+                        <li class="About-us"><a href="#" class="about-us">about-us</a></li>
+                        <li class="Goals"><a href="#" class="goals">goals</a></li>
+                        <li class="Contact-us"><a href="#" class="contact-us">contact-us</a></li>
                     </ul>
                     <img src="images/menu-horizontal.png" alt="nav-burger" class="nav-burger">
-            </div>
+                </div>
+                </nav>
         </nav>
     </header>
-    <section class="hero-section">
-        <div class="welcome-div-left">
-            <h1>Welcome.</h1>
-            <p>This website is all about us.</p>
-        </div>
-        <div class="welcome-div-right">
-            <img src="#" alt="Jason and Kaitlyn" class="me-and-her">
-        </div>
-    </section>
-    <section class="about-us">
-        <div class="container-about">
-            <div class="left-col-about">
-                <h1 class="jason">Hello, I'm Jason.</h1>
-                <img src="images/man.png" alt="Picture of Jason">
+    <main class="main">
+        <section class="hero-section">
+            <div class="welcome-div-left">
+                <h1>Welcome.</h1>
+                <p>This website is all about us.</p>
             </div>
-            <div class="right-col-about">
-                <h1 class="kait">Hi, I'm Kaitlyn.</h1>
-                <img src="images/woman.png" alt="Picture of Kaitlyn">
+            <div class="welcome-div-right">
+                <img src="#" alt="Jason and Kaitlyn" class="me-and-her">
             </div>
-        </div>
-    </section>
-    <section class="goals-section">
-        <div class="jason-left">
-            <h1 class="jason">Jason</h1>
-        </div>
-        <div class="kait-right">
-            <h1 class="kait">Kaitlyn</h1>
-        </div>
-    </section>
-    <section class="contact-us-section">
-        <h1 class="contact-us-h1">Contact Us.</h1>
-        <div class="wrapper">
-            <div class="contact-jason">
-                <h1 class="Jason-h1-contact">Jason</h1>
-                <form action="contact">
-                    <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
-                    <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
-                    <img src="#" alt="phone"><h3 class="phone-number">Reach Jason : <span class="number"><a href="tel:+1(512)738-4677">+1(512)738-4677</a></span></h2>
+        </section>
+        <section class="about-us">
+            <div class="container-about">
+                <div class="left-col-about">
+                    <h1 class="jason">Hello, I'm Jason.</h1>
+                    <div class="img-jason-div">
+                        <img src="images/man.png" alt="Picture of Jason">
+                    </div>
+                    <div class="about-me-jason">
+                        <p class="jason-p">
+                            I am an aspiring Front-End Developer, who in his free time loves hanging out with this person here too my 
+                            right. <span><img src="#" alt="arrow-right" class="arrow-right"></span>
+                        </p>
+                    </div>
     
-                </form>
+                </div>
+                <div class="right-col-about">
+                    <h1 class="kait">Hi, I'm Kaitlyn.</h1>
+                    <img src="images/woman.png" alt="Picture of Kaitlyn">
+                </div>
             </div>
-            <div class="contact-kait">
-                <h1 class="Kait-h1-contact">Kaitlyn</h1>
-                <form action="contact">
-                    <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
-                    <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
-                    <img src="#" alt="phone"><h3 class="phone-number">Reach Kaitlyn : <span class="number"><a href="tel:+1(203)360-6534">+1(203)360-6534</a></span></h2>
-                </form>
+        </section>
+        <section class="goals-section">
+            <div class="jason-left">
+                <h1 class="jason">Jason</h1>
             </div>
-        </div>
-    </section>
+            <div class="kait-right">
+                <h1 class="kait">Kaitlyn</h1>
+            </div>
+        </section>
+        <section class="contact-us-section">
+            <h1 class="contact-us-h1">Contact Us.</h1>
+            <div class="wrapper">
+                <div class="contact-jason">
+                    <h1 class="Jason-h1-contact">Jason</h1>
+                    <form action="contact">
+                        <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
+                        <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
+                        <img src="#" alt="phone"><h3 class="phone-number">Reach Jason : <span class="number"><a href="tel:+1(512)738-4677">+1(512)738-4677</a></span></h2>
+        
+                    </form>
+                </div>
+                <div class="contact-kait">
+                    <h1 class="Kait-h1-contact">Kaitlyn</h1>
+                    <form action="contact">
+                        <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
+                        <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
+                        <img src="#" alt="phone"><h3 class="phone-number">Reach Kaitlyn : <span class="number"><a href="tel:+1(203)360-6534">+1(203)360-6534</a></span></h2>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <footer>
+            <div class="left-col-logo">
+
+            </div>
+            <div class="right-col-logo">
+
+            </div>
+        </footer>
+    </div>
 
 </body>
 </html>
