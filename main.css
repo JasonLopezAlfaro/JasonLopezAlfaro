@@ -1,5 +1,1101 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-
-:root{
-    --main-color: #ffe8c1;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Playfair+Display:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@font-face {
+   font-family: "Gellix";
+   src: local("Gellix SemiBold"), local("Gellix-SemiBold"),
+      url("./Gellix-SemiBold/Gellix-SemiBold.woff2") format("woff2"),
+      url("./Gellix-SemiBold.woff") format("woff"),
+      url("./Gellix-SemiBold.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
 }
+
+:root {
+   --main-color: #f8f8f8;
+   --secondary-blue-button: hsl(240, 100%, 60%);
+   --secondary-blue: hsl(240, 100%, 88%);
+   --secondary-pink: hsl(340, 100%, 88%);
+   --main-font: "Gellix";
+   --secondary-font: "Josefin", sans-serif;
+   --main-font-color: #020553;
+   --secondary-font-color: hsl(350, 100%, 75%);
+   --main-font-size: 1.6rem;
+   --heading-font-size: 2.35rem;
+   --secondary-font-size: 1.3rem;
+
+   --font-size-sm: clamp(0.9rem, 0.63vw + 0.45rem, 1.35rem);
+   --font-size-base: clamp(0.95rem, 0.91vw + 0.64rem, 1.8rem);
+   --font-size-md: clamp(1rem, 1.31vw + 0.45rem, 2.4rem);
+   --font-size-lg: clamp(1.56rem, 1.86vw + 0.82rem, 3.2rem);
+   --font-size-xl: clamp(1.95rem, 2.1vw + 0.5rem, 4.26rem);
+   --font-size-xxl: clamp(2.44rem, 3.68vw + 0.97rem, 5.68rem);
+   --font-size-xxxl: clamp(3.05rem, 5.14vw + 1rem, 7.58rem);
+   --font-size-super: clamp(3.5rem, 5.3vw + 1.5rem, 10rem);
+}
+
+html,
+body {
+   max-width: 100%;
+   overflow-x: hidden;
+   font-size: 10px;
+}
+
+*,
+::after,
+::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+/* header.banner
+    
+} */
+header.banner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background-color: hsl(350, 100%, 95%);
+   /* position: fixed; */
+   top: 0;
+}
+nav.nav-container {
+   display: flex;
+   justify-content: space-between;
+   height: fit-content;
+   position: relative;
+   height: 105px;
+   width: 80%;
+}
+a.logo-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100px;
+   max-height: 100px;
+   padding-top: 0.5rem;
+}
+img.img-logo {
+   height: 50px;
+   width: 50px;
+}
+nav.right-col-head {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-basis: auto;
+   margin-left: 3rem;
+}
+div.right-col-list {
+   padding: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 3rem;
+}
+ul.list-container {
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   height: 100%;
+}
+li.home,
+li.about-us,
+li.goals {
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 0.5rem 0 0.5rem;
+   margin: 0 1.25rem 0 1.25rem;
+   position: relative;
+}
+li.dl-cv {
+   width: max-content;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 0.5rem 0 0.5rem;
+   margin: 0 1.25rem 0 1.25rem;
+   position: relative;
+}
+li.home::after {
+   background-color: #ff8095;
+   content: "";
+   position: absolute;
+   height: 3px;
+   width: 100%;
+   left: 0;
+   bottom: 3px;
+   border-radius: 3px;
+}
+
+li.about-us::after,
+li.goals::after {
+   background-color: hsl(350, 100%, 75%);
+
+   content: "";
+   position: absolute;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: 3px;
+   transition: all 0.3s ease;
+   border-radius: 3px;
+}
+
+li.about-us:hover:after,
+li.goals:hover:after {
+   width: 100%;
+}
+
+button.home,
+button.about-us,
+button.goals {
+   border: none;
+   width: max-content;
+   display: block;
+   padding: 1rem;
+   background-color: transparent;
+   color: hsl(240, 100%, 50%);
+   font-family: var(--main-font);
+   font-weight: 600;
+   font-size: 1.6rem;
+   width: auto;
+   height: auto;
+   text-align: center;
+   letter-spacing: 0.5px;
+}
+button.dl-cv-btn {
+   border-color: hsl(350, 100%, 70%);
+   border-radius: 14px;
+   border-width: 4px;
+   border-style: solid;
+   background-color: transparent;
+   color: hsl(240, 100%, 50%);
+   width: 14rem;
+   height: 4.5rem;
+   max-width: 14rem;
+   font-family: var(--main-font);
+   font-size: 2rem;
+   font-weight: 600;
+   text-align: center;
+   vertical-align: middle;
+   padding: 0 1rem 0 1rem;
+   transition: all ease-out 0.5s;
+   cursor: pointer;
+}
+
+button.dl-cv-btn:hover {
+   background-color: hsl(350, 100%, 75%);
+   color: white;
+   transition: ease-in-out all 1s;
+}
+
+button.home:hover,
+button.about-us:hover,
+button.goals:hover {
+   cursor: pointer;
+   color: var(--main-font-color);
+}
+
+div.img-hamburger-div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   display: none;
+}
+img.nav-burger {
+   width: 25px;
+   height: 25px;
+   padding: 0 1rem 0 1rem;
+   margin-left: 5rem;
+}
+/* main */
+
+main.main {
+   width: 100%;
+   max-width: 100%;
+   /* margin-top: 105px; */
+}
+section.hero-section {
+   display: block;
+   height: 100%;
+   padding-top: 4rem;
+   padding-bottom: 10rem;
+   background-color: hsl(350, 100%, 95%);
+}
+
+div.container-hero {
+   padding-right: 1.5rem;
+   padding-left: 1.5rem;
+   width: 100%;
+   display: flex;
+}
+div.row-hero {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   max-width: 100%;
+}
+
+div.welcome-div-left {
+   text-align: left;
+   max-height: 550px;
+   padding-top: 3rem;
+   padding-left: 1.5rem;
+   height: 520px;
+   width: 100%;
+   max-width: 55rem;
+   padding-right: 5rem;
+}
+h1.hero-slogan {
+   font-size: 7.5rem;
+   font-family: var(--main-font);
+   color: #020555;
+   margin-bottom: 4rem;
+}
+div.p-hero {
+   margin-bottom: 4rem;
+}
+div.p-hero > p {
+   font-size: 2.4rem;
+   font-family: var(--secondary-font);
+   line-height: 3.5rem;
+   font-weight: 400;
+   color: hsl(238, 95%, 17%);
+}
+div.welcome-div-right {
+   height: 550px;
+   width: 100%;
+   max-width: 55rem;
+   padding-right: 1.5rem;
+   padding-left: 5rem;
+}
+img.me-and-her {
+   width: 500px;
+   height: 500px;
+}
+button.reach-us {
+   background-color: hsl(350, 100%, 75%);
+   color: white;
+   border: solid 0.2rem;
+   border-radius: 12px;
+   border-color: hsl(350, 100%, 70%);
+   width: 28rem;
+   height: 5rem;
+   font-size: 2.5rem;
+   font-family: var(--main-font);
+   cursor: pointer;
+}
+/* finished hero  */
+
+/* starting about-us preview jason */
+
+section.preview-about-us {
+   margin: 12rem 0 7rem 0;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+div.preview-container {
+   /* padding-right: 1.5rem;
+    padding-left: 1.5rem; */
+   margin-right: auto;
+   margin-left: auto;
+   width: 85%;
+}
+/* div.header-preview{
+    
+} */
+
+h2.jason-preview-hero {
+   font-family: var(--main-font);
+   font-size: 7.2rem;
+   color: #020555;
+   padding: 0 1.5rem;
+   margin-bottom: 2.4rem;
+}
+p.jason-preview-p {
+   width: fit-content;
+   font-size: 2.2rem;
+   color: #020555;
+   margin-bottom: 4.4rem;
+   font-family: var(--secondary-font);
+   font-weight: 300;
+   padding: 0 1.5rem;
+}
+div.all-jason-skills {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 100%;
+   margin-top: 4rem;
+   margin-bottom: 7rem;
+}
+div.all-jason-skills > div {
+   width: 25%;
+   height: 27.5rem;
+   max-height: 30rem;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 1.5rem;
+   /* margin-bottom: 5rem; */
+}
+
+div.all-jason-skills > div > div > img {
+   width: 55px;
+   height: 55px;
+   margin-top: 2rem;
+}
+div.all-jason-skills > div > h3 {
+   margin-top: 1.2rem;
+   margin-bottom: 2.4rem;
+   font-family: var(--main-font);
+   font-size: 3.2rem;
+   height: 7rem;
+   line-height: 1;
+   color: #020555;
+}
+div.all-jason-skills > div > p {
+   width: 80%;
+   text-align: left;
+   font-family: var(--secondary-font);
+   font-size: 1.5rem;
+   color: #020555;
+   font-weight: 100;
+}
+/* jasons preview done */
+
+/* start kait preview */
+
+h2.kait-preview-hero {
+   font-family: var(--main-font);
+   font-size: 7.2rem;
+   color: #ff4d6a;
+   text-align: right;
+   margin-bottom: 2.4rem;
+   padding: 0 1.5rem;
+}
+p.kait-preview-p {
+   width: fit-content;
+   font-size: 2.2rem;
+   color: hsl(350, 100%, 40%);
+   padding: 0 1.5rem;
+   font-weight: 300;
+   margin-left: auto;
+   margin-bottom: 4.4rem;
+   font-family: var(--secondary-font);
+}
+
+/* color - #FFC0CA */
+/* FFB17F */
+div.all-kait-skills {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 100%;
+   margin-top: 4rem;
+}
+div.all-kait-skills > div {
+   width: 25%;
+   height: 27.5rem;
+   max-height: 30rem;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 1.5rem;
+}
+
+div.all-kait-skills > div > div {
+   /* for some reason aligns it with paragraph perfectly*/
+   /* remove width use flex end */
+   margin-left: auto;
+   display: flex;
+   justify-content: flex-end;
+}
+
+div.all-kait-skills > div > div > img {
+   width: 55px;
+   height: 55px;
+   margin-top: 2rem;
+}
+
+/* <div> Icons made by <a href="https://www.flaticon.com/authors/edi-prast" title="Edi Prast"> Edi Prast </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
+div.all-kait-skills > div > h3 {
+   margin-top: 1.2rem;
+   margin-bottom: 2.4rem;
+   font-family: var(--main-font);
+   font-size: 3.2rem;
+   height: 7rem;
+   width: 100%;
+   line-height: 1;
+   color: #ff4d6a;
+   margin-left: auto;
+   text-align: right;
+}
+div.all-kait-skills > div > p {
+   width: 80%;
+   text-align: left;
+   font-family: var(--secondary-font);
+   font-size: 1.5rem;
+   color: hsl(350, 100%, 30%);
+   margin-left: auto;
+   text-align: right;
+   font-weight: 100;
+}
+
+/* section preview done  */
+
+/* Section about-us */
+
+section.about-us {
+   width: 100%;
+   height: fit-content;
+   padding: 2rem 0;
+   margin: 0rem 0 7rem 0;
+}
+
+div.container-about {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 95%;
+   margin: 0 auto;
+}
+div.about-both {
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   /* border: solid black 3px; */
+   border: solid hsl(238, 95%, 95%) 1px;
+   border-radius: 2rem;
+   box-shadow: 0px 0px 7px 1px hsla(238, 95%, 17%, 0.2);
+   padding: 3rem 2rem;
+   background-color: hsl(348, 100%, 98%);
+}
+div.about-both > div {
+   width: 50%;
+   height: 87rem;
+   max-height: 88rem;
+}
+
+div.h1-jason {
+   position: absolute;
+   writing-mode: vertical-lr;
+   transform: rotate(180deg);
+   display: inline;
+   width: min-content !important;
+   height: 100%;
+   top: 0;
+   left: 0.5%;
+   text-align: center;
+   font-size: var(--font-size-super);
+   min-height: 0vw;
+   font-family: "Josefin Sans";
+   font-weight: 200;
+   letter-spacing: 0.075rem;
+   color: #ffffff;
+   text-shadow: 2px 3.5px #020553;
+}
+
+div.h1-kait {
+   position: absolute;
+   writing-mode: vertical-lr;
+   display: inline;
+   width: min-content !important;
+   height: 100%;
+   top: 0;
+   right: 0.5%;
+   text-align: center;
+   font-size: var(--font-size-super);
+   min-height: 0vw;
+   font-family: "Josefin Sans";
+   font-weight: 200;
+   letter-spacing: 0.5rem;
+   color: #ffffff;
+   text-shadow: 2px 3.5px #ff3c5d;
+}
+div.download-cv {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+button.kk-cv-about {
+   width: 30%;
+   max-height: 5rem;
+   min-height: 0vw;
+   margin: 3rem auto;
+   border: solid 2px #020555;
+   border-radius: 7px;
+   background-color: #ff8095;
+   font-family: var(--main-font);
+   font-size: var(--font-size-md);
+   height: 3.5rem;
+   text-align: center;
+   color: #0006ac;
+   cursor: pointer;
+}
+button.kk-cv-about:hover {
+   background-color: #020553;
+   border: solid 2px #ff8095;
+   color: #ff3c5d;
+}
+button.jj-cv-about {
+   width: 30%;
+   margin: 3rem auto;
+   min-height: 0vw;
+   border: solid 2px #ff8095;
+   border-radius: 7px;
+   background-color: #020553;
+   font-family: var(--main-font);
+   font-size: var(--font-size-md);
+   height: 3.5rem;
+   text-align: center;
+   color: #ff3c5d;
+   cursor: pointer;
+}
+button.jj-cv-about:hover {
+   border: solid 2px #020555;
+   background-color: #ff8095;
+   color: #0006ac;
+}
+
+div.img-kait-div {
+   display: flex;
+   justify-content: center;
+}
+div.img-jason-div {
+   display: flex;
+   justify-content: center;
+}
+img.personal {
+   width: 100%;
+   max-width: 45rem;
+   height: auto;
+}
+div.about-us-header > span {
+   font-family: var(--main-font);
+   font-size: 6.33rem;
+}
+div.about-us-header {
+   width: 25%;
+   margin: 3.5rem auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #020555;
+}
+div.about-us-jk {
+   margin: 3rem 0 1rem 0;
+   padding: 0 3rem;
+   height: 22rem;
+}
+div.p-jason {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 1.5rem;
+}
+p.p-jk {
+   /* paragraph about-us both */
+   font-family: var(--secondary-font);
+   font-weight: 300;
+   font-size: var(--font-size-md);
+   color: #020555;
+   width: 75%;
+   height: 15rem;
+   padding: 1rem;
+   min-height: 0vw;
+   /* margin: 1rem 0; */
+}
+div.social-platforms-jk {
+   width: 75%;
+
+   margin: auto;
+
+   border: #020553 solid 0.25rem;
+   border-radius: 5px;
+   background-color: #ffffff;
+   box-shadow: 0 0 3px 2px hsla(350, 100%, 65%, 0.3);
+}
+hr.brake-jk {
+   width: 50%;
+   margin: 2rem auto;
+}
+
+ul.socials-jj {
+   display: flex;
+   list-style: none;
+}
+ul.socials-jj > li {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+ul.socials-jj > li > a {
+   display: flex;
+   padding: 1rem 0.5rem;
+}
+
+ul.socials-jj > li > a > img {
+   width: 2.75rem;
+   height: 2.75rem;
+}
+/* end  of jasons half about us */
+/* div.about-me-kait {
+   margin: 3rem 0 0 0;
+   padding: 0 3rem;
+} */
+div.p-kait {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 1.5rem;
+}
+/* div.p-kait > p {
+   font-family: var(--secondary-font);
+   font-weight: 500;
+   font-size: 2rem;
+   color: #020555;
+   width: 75%;
+   height: 20vh;
+   margin: 1rem 0;
+
+} */
+
+/* div.social-platforms-kait {
+   width: 75%;
+   margin: 0 auto 2rem;
+   border: #ff4d6a solid 0.25rem;
+   border-radius: 0.5rem;
+   background-color: #ffffff;
+   box-shadow: 0 0 3px 2px hsla(238, 95%, 17%, 0.2);
+} */
+ul.socials-kait {
+   display: flex;
+   list-style: none;
+}
+ul.socials-kait > li {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+ul.socials-kait > li > a {
+   display: flex;
+   padding: 1rem 0.5rem;
+}
+
+ul.socials-kait > li > a > img {
+   width: 2.75rem;
+   height: 2.75rem;
+}
+
+/* #A8ABFF - blue */
+/* #FFAEBB - pink */
+/* 555BFF - dark blue */
+
+/* about-us section end */
+
+/* Start of Our Goals Section */
+
+section.goals-section {
+   width: 100vw;
+   height: fit-content;
+   padding: 2rem 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+div.wrapper-goals {
+   width: 85%;
+   display: flex;
+}
+
+section.goals-section > div > div > h1 {
+   color: #020553;
+}
+div.goals-header {
+   width: fit-content;
+   margin: auto;
+   white-space: nowrap;
+}
+div.goals-header > h1 {
+   font-size: var(--font-size-xxxl);
+   font-family: var(--main-font);
+   padding: 2rem;
+   min-height: 0vh;
+}
+
+div.our-goals-container {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: auto;
+   padding: 2rem;
+}
+div.goals-both-div {
+   height: clamp(25rem, 32rem, 40rem);
+   width: 50%;
+   min-width: 23rem;
+   max-width: 45rem;
+   border: 2px solid transparent;
+   border-radius: 0.7rem;
+   padding: 2rem;
+   box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.024),
+      0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 24.1px rgba(0, 0, 0, 0.046),
+      0px 0px 80px rgba(0, 0, 0, 0.07);
+   margin: 2rem 2rem;
+}
+
+h2.jason {
+   font-family: var(--main-font);
+   font-weight: 400;
+   font-size: clamp(3.1rem, 3vw - 0.25rem, 4rem);
+   color: #0005a1;
+   padding-bottom: 10%;
+}
+hr.jk-goals {
+   border-top: 0.3px solid hsla(0, 0%, 0%, 0.2);
+}
+
+h2.kait {
+   font-family: var(--main-font);
+   font-weight: 400;
+   font-size: 4rem;
+   color: #ff3c5d;
+   padding-bottom: 10%;
+   font-size: clamp(3.1rem, 3vw - 0.25rem, 4rem);
+}
+
+ul.goals-unordered {
+   list-style: none;
+   margin: 2rem 0;
+}
+ul.goals-unordered > li {
+   font-family: var(--secondary-font);
+   font-size: 1.5rem;
+   margin: 2rem 0;
+   font-weight: 100;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+ul.goals-unordered > li > span {
+   height: 100%;
+   display: flex;
+   margin-right: 2rem;
+   align-items: flex-end;
+}
+ul.goals-unordered > li > span > img {
+   height: 3.2rem;
+   width: auto;
+}
+/*  */
+
+/* 1220 px  or  1010px we have to wait and see if we should make the our goals portion wrap so it looks better on larger mobile device, and we will go on from there 
+
+
+
+*/
+
+/* Jason make sure to make heading responsive by making them vw based and adding or subtracting some 
+rem from them  */
+
+/* Beginning Contact section */
+section.contact-us-section {
+   width: 100%;
+   height: 100%;
+   margin: 7rem 0;
+   padding: 2rem 0;
+   background-color: #000342;
+}
+
+div.header-contact {
+   width: 100%;
+   text-align: center;
+   color: hsl(0, 0%, 80%);
+   font-size: var(--font-size-sm);
+   font-weight: 200;
+   font-family: var(--secondary-font);
+   margin-bottom: 5rem;
+}
+div.header-contact > h1 {
+   font-size: var(--font-size-xxxl);
+   min-height: 0vw;
+   color: white;
+   font-family: var(--main-font);
+   vertical-align: middle;
+}
+div.header-contact > span {
+   color: #ff4d6a;
+   font-weight: bolder;
+}
+div.contact-outtermost-container {
+   background-color: hsla(0, 0%, 100%, 1);
+   width: 85%;
+   margin: auto;
+   border: solid transparent;
+   border-radius: 0.7rem;
+   padding: 2px;
+   height: 100%;
+   display: flex;
+}
+div.left-contact-info {
+   width: 33.33%;
+   height: 100%;
+   background-color: #ff516e;
+   border-radius: 0.7rem;
+   padding: 3%;
+   box-shadow: 0px 0px 3.6px rgba(0, 0, 0, 0.03),
+      0px 0px 10px rgba(0, 0, 0, 0.035), 0px 0px 24.1px rgba(0, 0, 0, 0.046),
+      0px 0px 80px rgba(0, 0, 0, 0.07);
+}
+div.left-contact-info > h2 {
+   font-family: var(--main-font);
+   font-size: var(--font-size-xl);
+   min-height: 0vw;
+   width: 100%;
+   word-break: none;
+   color: white;
+   font-weight: bold;
+   margin-bottom: 4rem;
+}
+
+ul.info-list {
+   list-style: none;
+}
+ul.info-list > img {
+   list-style: none;
+}
+ul.info-list > h3 {
+   font-family: "Poppins";
+   font-size: var(--font-size-base);
+   font-weight: 400;
+   word-spacing: 0.5%;
+   color: #020553;
+   min-height: 0vw;
+   margin-bottom: 2rem;
+}
+ul.info-list > li {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 1rem 0;
+}
+ul.info-list > li.info {
+   font-family: var(--secondary-font);
+   font-size: var(--font-size-sm);
+   font-weight: 200;
+   min-height: 0vw;
+}
+ul.info-list > li.info > img {
+   width: clamp(24px, 3.2rem, 4rem);
+   height: auto;
+}
+
+div.right-form {
+   width: 66%;
+   padding: 3rem;
+}
+
+form.contact-form > ul.top-form {
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-bottom: 2rem;
+}
+
+form.contact-form > ul > li {
+   width: 45%;
+   margin-bottom: 2rem;
+   /* make width 100% for mobile screens */
+}
+form.contact-form > ul > li > label {
+   font-family: var(--secondary-font);
+   font-weight: 300;
+   font-size: calc(var(--font-size-sm));
+}
+form.contact-form > ul > li > input {
+   width: 100%;
+   border: none;
+   border-bottom: solid 0.5px #02055344;
+   border-radius: 0.25px;
+   height: 3rem;
+   margin-top: 0.3rem;
+}
+
+input#fname,
+input#lname,
+input#email,
+input#phone {
+   color: #000591;
+   font-family: var(--secondary-font);
+   font-weight: 100;
+}
+
+form.contact-form > * {
+   font-family: var(--secondary-font);
+}
+form.contact-form > p {
+   font-weight: 500;
+   font-family: "Poppins";
+   letter-spacing: 0.3px;
+   font-size: calc(var(--font-size-base) - 0.1rem);
+   margin-bottom: 2rem;
+}
+
+ul.skills {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+ul.skills > li {
+   width: 25%;
+}
+ul.skills > li.skill > label {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   font-size: var(--font-size-sm);
+   min-height: 0vw;
+}
+
+label.checkbox-label {
+   display: inline-flex !important;
+   align-items: center;
+   cursor: pointer;
+}
+
+input.checkbox {
+   display: none !important;
+}
+
+span.check-box-box {
+   width: 1.25rem !important;
+   height: 1.25rem !important;
+   border: 1px solid rgb(134, 134, 134);
+   border-radius: 7px;
+   margin-right: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+}
+span.check-box-box:hover{
+   background-color: #cccc;
+}
+span.check-box-box > svg {
+   opacity: 0;
+   width: 0.75rem;
+   height: 0.75rem;
+}
+input.checkbox:checked + span.check-box-box > svg {
+   opacity: 1;
+   fill: white;
+   /* this works really well just need an svg that */
+}
+input.checkbox:checked + span.check-box-box {
+   background-color: rgb(0, 60, 255);
+   border: 1px solid blue;
+}
+
+/* jason try making an svg that works by implementing some javascript that will 
+   add a class to know when a checkmark is checked or unchecked. 
+   
+      In the mean time use Unicode : "\2713"
+      That works for the time being
+      if you have time however be fancy and use some javascript to make the checkmark work
+
+   */
+
+/* CHECK MARK
+Unicode: U+2713, UTF-8: E2 9C 93 */
+
+/*
+[type = "checkbox"] + label{
+   display: inline-block;
+   cursor: pointer;
+   
+   
+}
+[type = "checkbox"] + label::before{
+   content: "";
+   width: 1.3rem;
+   height: 1.3rem;
+   outline: .3px solid rgba(128, 128, 128, 0.705);
+   border-radius: 1rem;
+   margin-right: 1rem;
+   
+}
+.check-kk[type = "checkbox"]:checked + label::before{
+   content: "";
+   width: 1.3rem;
+   height: 1.3rem;
+   outline: .3px solid #ff516e;
+   
+   border-radius: 1rem;
+   margin-right: 1rem;
+   background-color: #ff516e;
+   transform: scale(1);
+} */
+
+/* ul.skills > li.skill > label > input[type = "checkbox"]{
+   transform-origin: bottom;
+   transform: scale(0);
+   width: .65em;
+   height: .65em;
+   content: "";
+   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+
+   
+   
+
+} */
+
+/* for smaller displays make  */
+
+/* #FF6982 */
+/* Links */
+/* #ff4d6a */
+/* #0005AA */
+/* 
+<a href="https://www.flaticon.com/free-icons/travel" title="travel icons">Travel icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/money" title="money icons">Money icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/freelance" title="freelance icons">Freelance icons created by Freepik - Flaticon</a>
+<div> undefined <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+<a href="https://www.flaticon.com/free-icons/wedding" title="wedding icons">Wedding icons created by Freepik - Flaticon</a>
+<div> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+<div> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+<div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+<a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/gps" title="gps icons">Gps icons created by Freepik - Flaticon</a>
+
+
+*/
+
+/* random
+
+
+   LG 32UL950-W 32" Class Ultrafine 4K
+   UHD LED Monitor with Thunderbolt 3 
+   Connectivity Silver (31.5" Display)
+
+
+*/
+
+

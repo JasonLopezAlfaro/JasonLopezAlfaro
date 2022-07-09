@@ -1,0 +1,32 @@
+Dont forget to create a better resume with up to date expereinces
+keep it up you are doing continue praying and lets goooo! We got this
+Ok so here are some resources we can use that are going to be useful 
+but for now try to crate a checkmark in FIgma or adobe illustrator
+remember it has to be an svg file.
+
+Resources : 
+
+-https://iconmonstr.com/check-mark-17-svg/
+-https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
+-Unicode is cool and you have some resources on your phone that you can use
+- Remember to make everything responsive and to only make the hero 
+  not wrap
+-make the rest of the lettering responsive by using view port units
+-fix about me, hardest for last 
+    >some fixes include making the header 100% width
+    >making images smaller at smaller viewports manually since they dotn shrink fst enough
+    >making the height of the about me less tall
+
+-Our goals section \
+    >make it wrap for tablet 
+    >then even smaller devices 
+
+-Contact us seems great so far
+
+-create the footer 
+    
+-Finish and edit to work perfectly 
+
+-Once fully done
+    > work on backend contact section to be fully functional and include a page for 
+      icons

@@ -7,142 +7,323 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width = initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
     <title>Jason and Kait.</title>
 </head>
-<body>
+<body style="background-color: white;">
     <header role="banner" class="banner">
         <nav class="nav-container">
-            <div class="left-col-head">
-                <a href="#"><img src="images/logo.png" alt="LOGO"></a>
-            </div>
-            <nav class="right-col-head">
+            <a href="#" class="logo-link"><img src="images/J&K-logo.png" alt="LOGO" class="img-logo"></a>
+            
+            <nav class="right-col-head collapse">
                 <div class="right-col-list">
                     <ul class="list-container">
-                        <li class="home"><a href="#" class="home">Home</a></li>
-                        <li class="about-us"><a href="#" class="about-us">About-us</a></li>
-                        <li class="goals"><a href="#" class="goals">Goals</a></li>
-                        <li class="contact-us"><a href="#" class="contact-us">Contact-us</a></li>
+                        
+                        <li class="home"><button href="#" class="home">Home</button></li>
+                        <li class="about-us"><button href="#" class="about-us">About-us</button></li>
+                        <li class="goals"><button href="#" class="goals">Goals</button></li>
+                        <li class="dl-cv"><button href="#" class="dl-cv-btn"><script> </script>Download CVs</button></li>
+                        
                     </ul>
-                    <img src="images/menu-horizontal.png" alt="nav-burger" class="nav-burger">
+                </div>
+                <div class="img-hamburger-div">
+                    <a href="#"><img src="images/menu-horizontal.png" alt="nav-burger" class="nav-burger"></a>
                 </div>
                 </nav>
         </nav>
     </header>
     <main class="main">
         <section class="hero-section">
-            <div class="welcome-div-left">
-                <h1>Welcome.</h1>
-                <div class="p-hero">
-                    <p>This website is all about us.</p>
+            <div class="container-hero">
+                <div class="row-hero">
+                    <div class="welcome-div-left">
+                        <h1 class="hero-slogan">Hardest  
+                            <br>
+                            working couple 
+                            <br>
+                            ready to help.
+                        </h1>
+                        <div class="p-hero">
+                            <p> 
+                                Get in contact with a hard working couple,
+                                <br>
+                                ready to go above and beyond on all that we do.
+                            </p>
+                        </div>
+                        <button class="reach-us" href = "www.google.com">Reach Us</button>
+                    </div>
+                    <div class="welcome-div-right">
+                        <img src="images/couple-free-roam.png" alt="Jason and Kaitlyn" class="me-and-her">
+                    </div>
                 </div>
-            </div>
-            <div class="welcome-div-right">
-                <img src="images/couple-free-roam.png" alt="Jason and Kaitlyn" class="me-and-her">
             </div>
         </section>
-        <section class="about-us">
-            <div class="container-about">
-                <div class="left-col-about">
-                    <h1 class="jason">Hello, I'm Jason.</h1>
-                    <div class="img-jason-div">
-                        <img src="images/jason-coding.png" alt="Picture of Jason">
-                    </div>
-                    <div class="about-me-jason">
-                        <div class="p-jason">
-                            <p class="jason-p">
-                                I am an aspiring Front-End Developer, who in his free time loves hanging out with this person here too my 
-                                right. <span><img src="#" alt="arrow-right" class="arrow-right"></span>I am currently Attending Austin Community College
-                                I am also a Software Development Manager at BabyBox.
-                            </p>
-                        </div>
-                        <div class="social-platforms-jason">
-                            <ul class="socials-jj">
-                                <li class="fb-li"><a href="http://facebook.com"><img src="#" alt="facebook-logo"></a></li>
-                                <li class="ig-li"><a href="http://instagram.com"><img src="#" alt="instagram-logo"></a></li>
-                                <li class="linkedin-li"><a href="http://linkedin.com"><img src="#" alt="linkedin-logo"></a></li>
-                                <li class="twitter-li"><a href="http://twitter.com"><img src="#" alt="twitter-logo"></a></li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-    
+        <section class="preview-about-us">
+            <div class="preview-container">
+                <div class="header-preview-jason">
+                    <h2 class="jason-preview-hero">
+                        A true Front-End Dev with real experience.
+                    </h2>
+                    <p class="jason-preview-p">
+                        Save time working along side an experienced,
+                       
+                        Front-End Developer with Project Managment experience.
+                    </p>
                 </div>
-                <div class="right-col-about">
-                    <h1 class="kait">Hi, I'm Kaitlyn.</h1>
-                    <div class="img-kait-div">
-                        <img src="images/shopping-kait.png" alt="Picture of Kaitlyn">
-                    </div>
-                    <div class="about-me-kait">
-                        <div class="p-kait">
-                            <p class="kait-p">
-                                I am an aspiring doctor who moved half way across the country to live a new life. To start over with my boyfriend/fiance/future husband.
-                                Looking to attend University here in Texas and one day achieve my goal of traveling the world and moving to my home country
-                                of Costa Rica.
-                            </p>
+                <div class="all-jason-skills">
+                    <div class="col-1-jason">
+                        <div class="img-col-1">
+                            <img src="./images/code.png" alt="skill-1-jasonn" class="skill-1-jasonn">
                         </div>
-                        <div class="social-platforms-kait">
-                            <ul class="socials-kait">
-                                <li class="fb-li"><a href="http://facebook.com"><img src="#" alt="facebook-logo"></a></li>
-                                <li class="ig-li"><a href="http://instagram.com"><img src="#" alt="instagram-logo"></a></li>
-                                <li class="linkedin-li"><a href="http://linkedin.com"><img src="#" alt="linkedin-logo"></a></li>
-                                <li class="twitter-li"><a href="http://twitter.com"><img src="#" alt="twitter-logo"></a></li>
-                            </ul>
+                        <h3>Front-End Development</h3>
+                        <p>
+                            Mastered fundamental skills such as HTMl , CSS , Javascript,
+                            
+                            other libraries and frameworks.
+                        </p>
+                    </div>
+                    <div class="col-2-jason">
+                        <div class="img-col-2">
+                            <img src="/images/planning.png" alt="skill-2-jasonn" class="skill-2-jasonn">
+                        </div>
+                        <h3>Project Managment</h3>
+                        <p>
+                            I cover it all from planning, leading all from original to concurrent
+                            projects.
+                        </p>
+                    </div>
+                    <div class="col-3-jason">
+                        <div class="img-col-3">
+                            <img src="./images/ux.png" alt="skill-3-jasonn" class="skill-3-jasonn">
+                        </div>
+                        <h3>UI / UX Design</h3>
+                        <p>
+                            Using tools like Figma , Adobe XD , and Photoshop have
+                            made me a more versatile Front-End Developer.
+                        </p>
+                    </div>
+                    <div class="col-4-jason">
+                        <div class="img-col-4">
+                            <img src="./images/teamwork.png" alt="skill-4-jasonn" class="skill-4-jasonn">
+                        </div>
+                        <h3>Team Oriented</h3>
+                        <p>
+                            Working along side others is awesome, there is always more to learn and 
+                            I am happy to.
+                        </p>
+                    </div>
+                </div>
+                <div class="header-preview-kai">
+                    <h2 class="kait-preview-hero">
+                        A loving soul with, a caring heart
+                        <br> for kids.
+                    </h2>
+                    <p class="kait-preview-p">
+                        Be ready to welcome a loving nanny, with years of experience, and medical
+                        certfifications.
+                    </p>
+                </div>
+                <div class="all-kait-skills">
+                    <div class="col-1-kait">
+                        <div class="img-col-1">
+                            <img src="./images/presentation.png" alt="skill-1-kait" class="skill-1-kait">
+                        </div>
+                        <h3>Teaching Experience</h3>
+                        <p>
+                            Mastered fundamental skills such as HTMl , CSS , Javascript,
+                            
+                            other libraries and frameworks.
+                        </p>
+                    </div>
+                    <div class="col-2-kait">
+                        <div class="img-col-2">
+                            <img src="/images/health-clinic.png" alt="skill-2-kait" class="skill-2-kait">
+                        </div>
+                        <h3>Medical Student</h3>
+                        <p>
+                            I cover it all from planning, leading all from original to concurrent
+                            projects.
+                        </p>
+                    </div>
+                    <div class="col-3-kait">
+                        <div class="img-col-3">
+                            <img src="./images/heart.png" alt="skill-3-kait" class="skill-3-kait">
+                        </div>
+                        <h3>First Aid Certified </h3>
+                        <p>
+                            Using tools like Figma , Adobe XD , and Photoshop have
+                            made me a more versatile Front-End Developer.
+                        </p>
+                    </div>
+                    <div class="col-4-kait">
+                        <div class="img-col-4">
+                            <img src="./images/mother.png" alt="skill-4-kait" class="skill-4-kait">
+                        </div>
+                        <h3>Experienced Nanny</h3>
+                        <p>
+                            Working along side others is awesome, there is always more to learn and 
+                            I am happy to.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="about-us-header">
+                <span>About-us.</span>
+            </div>
+            <div class="container-about">
+                
+                <div class="about-both"> 
+                    
+                    <div class="h1-jason">Jason</div>     
+                    <div class="left-col-about">
+                        <div class="download-cv"><button class="jj-cv-about">Download CV</button></div>
+                        <div class="img-jason-div">
+                            <img class = "personal" src="images/jason.png" alt="Picture of Jason">
+                        </div>
+                        <div class="about-us-jk">
+                            <div class="p-jason">
+                                <p class="p-jk">
+                                    I am an aspiring Front-End developer who has developed
+                                    a passion for creating unique web pages. I may not be a senior level developer
+                                    but I know that I do have a love and passion for what I do.
+                                </p>
+                            </div>
+                            <hr class="brake-jk"/>
+                            
+                            <div class="social-platforms-jk">
+                                <ul class="socials-jj">
+                                    <li class="fb-li"><a href="http://facebook.com"><img src="./images/facebook.png" alt="facebook-logo"></a></li>
+                                    <li class="ig-li"><a href="http://instagram.com"><img src="images/instagram.png" alt="instagram-logo"></a></li>
+                                    <li class="linkedin-li"><a href="http://linkedin.com"><img src="images/linkedin.png" alt="linkedin-logo"></a></li>
+                                    <li class="twitter-li"><a href="http://twitter.com"><img src="images/twitter.png" alt="twitter-logo"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <div class="right-col-about">
+                        <div class="download-cv"><button class="kk-cv-about">Download CV</button></div>
+
+                        <div class="img-kait-div">
+                            <img class = "personal" src="images/kait.png" alt="Picture of Kaitlyn">
+                        </div>
+                        <div class="about-us-jk">
+                            <div class="p-kait">
+                                <p class="p-jk">
+                                    I am an aspiring doctor who moved half way across the country to make a new life for myself in the great state of Texas.
+                                    My greatest passion in life is giving kids the love and care they need, to maintain a healthy future.
+                                </p>
+                            </div>
+                            <hr class="brake-jk">
+                        
+                            <div class="social-platforms-jk">
+                                <ul class="socials-kait">
+                                    <li class="fb-li"><a href="http://facebook.com"><img src="images/facebook-pink.png" alt="facebook-logo"></a></li>
+                                    <li class="ig-li"><a href="http://instagram.com"><img src="images/instagram-pink.png" alt="instagram-logo"></a></li>
+                                    <li class="linkedin-li"><a href="http://linkedin.com"><img src="images/linkedin-pink.png" alt="linkedin-logo"></a></li>
+                                    <li class="twitter-li"><a href="http://twitter.com"><img src="images/twitter-pink.png" alt="twitter-logo"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h1-kait">Kaitlyn</div>     
                 </div>
             </div>
         </section>
         <section class="goals-section">
-            <h1>Our Goals.</h1>
-            <div class="jason-left">
-                <h2 class="jason">Jason</h2>
-                <div class="div-of-goals-jj">
-                    <ul class="goals-jj">
-                        <li class="goal1">Travel.</li>
-                        <li class="goal2">Have sustainable investements.</li>
-                        <li class="goal3">Run my own buisness.</li>
-                        <li class="goal4">Do right by God.</li>
-                    </ul>
-                </div>
+            <div class="wrapper-goals">
+
+                <div class="goals-header"><h1>Our Goals.</h1></div> 
+                <div class="our-goals-container">
+                    <div class="jason-left goals-both-div">
+                        <h2 class="jason">Jason</h2><hr class="jk-goals">
+                        <div class="div-of-goals-jj">
+                            <ul class="goals-jj goals-unordered">
+                                <li class="goal1 goal">Do right by God. <span class="img-list"><img src="images/bible.png" alt="Holy-Bible" class="God"></span></li>
+                                <li class="goal2 goal">Travel. <span class="img-list"><img src="images/plane-ticket.png" alt="Travel-Ticket"></span></li>
+                                <li class="goal3 goal">Have sustainable investements. <span class="img-list"><img src="images/profits.png" alt="investments"></span></li>
+                                <li class="goal4 goal">Run my own buisness. <span class="img-list"><img src="images/freelancer.png" alt=""></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="kait-right goals-both-div">
+                        <h2 class="kait">Kaitlyn</h2><hr class="jk-goals">
+                        <div class="div-of-goals-kait">
+                            <ul class="goals-kait goals-unordered">
+                                <li class="goal1-k goal">Follow Gods Word. <span class="img-list"><img src="images/bible-pink.png" alt="Holy-Bible class= "god"></span></li>
+                                <li class="goal2-k goal">Travel. <span class="img-list"><img src="images/plane-ticket-pink.png" alt="Travel Ticket"></span></li>
+                                <li class="goal3-k goal">Be a great Pediatrician. <span class="img-list"><img src="images/healthcare.png" alt="healthcare"></span></li>
+                                <li class="goal3-k goal">Oh and Travel. <span class="img-list"><img src="images/travel.png" alt="Travel-Around-The-World"></span></li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
-            <div class="kait-right">
-                <h2 class="kait">Kaitlyn</h2>
-                <div class="div-of-goals-kait">
-                    <ul class="goals-kait">
-                        <li class="goal1-k">Travel.</li>
-                        <li class="goal2-k">Travel.</li>
-                        <li class="goal3-k">Be a great Pediatrician.</li>
-                        <li class="goal3-k">Oh and Travel.</li>
-                    </ul>
-                </div>
             </div>
         </section>
         <section class="contact-us-section">
-            <h1 class="contact-us-h1">Contact Us.</h1>
-            <div class="wrapper">
-                <div class="contact-jason">
-                    <h1 class="Jason-h1-contact">Jason</h1>
-                    <form action="contact">
-                        <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
-                        <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
-                        <img src="images/phone-call-jj.png" alt="phone"><h3 class="phone-number">Reach Jason : <span class="number"><a href="tel:+1(512)738-4677">+1(512)738-4677</a></span></h2>
-        
-                    </form>
+            <div class="header-contact"><h1 class="contact-us-h1">Contact Us.</h1>Any questions or comments?<span> Just message us below!</span></div>
+            <div class="contact-outtermost-container">
+                <div class="left-contact-info">
+                    <h2 class="contact-info">Contact Information</h2>
+                    <ul class="jasons-info info-list">
+                        <h3 class="jason-list-heading-contact">Jason's Information</h3>
+                        <li class="info phone"><label for="phone">Phone: <a href="tel:+1(512)738-4677">+1(512)738-4677</a></label><img src="images/phones.png" alt=""></li>
+                        <li class="info email"><label for="email">Email: <a href="mailto:theamazingjasonatwork@gmail.com">theamazingjasonatwork@gmail.com</a></label><img src="images/mail.png" alt=""></li>
+                        <li class="info Address-P.O"><label for="address">P.O: 2231 Green Meadows Ln. , Buda , TX</label><img src="images/gps.png" alt="map-icon"></li>
+                    </ul>
+                    <hr style="margin: 3rem 0;  border: solid hsla(0, 0%, 100%, 0.25) .5px;">
+                    <ul class="kaits-info info-list">
+                        <h3 class="kaits-list-heading-contact">Kaitlyn's Information</h3>
+                        <li class="info phone"><label for="phone">Phone: <a href="tel:+1(203)360-6534">+1(203)360-6534</a></label><img src="images/phones (1).png" alt="Phone-icon"></li>
+                        <li class="info email"><label for="email">Email: <a href="mailto:kfalcxn@icloud.com">kfalcxn@icloud.com</a></label><img src="images/mail (1).png" alt="Email-icon"></li>
+                        <li class="info Address-P.O"><label for="address">P.O: 410 Lyon Terrace , Bridgeport , CT</label><img src="images/gps (1).png" alt="address-icon"></li>
+                    </ul>
                 </div>
-                <div class="contact-kait">
-                    <h1 class="Kait-h1-contact">Kaitlyn</h1>
-                    <form action="contact">
-                        <input type="text" name="fullname" id="fullname" placeholder="Full-Name" required><br>
-                        <input type="email" name="email" id="eamil" placeholder="E-Mail" required><br>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
-                        <img src="images/phone-call-kait-phone.png" alt="phone"><h3 class="phone-number">Reach Kaitlyn : <span class="number"><a href="tel:+1(203)360-6534">+1(203)360-6534</a></span></h2>
+                <div class="right-form">
+                    <form action="contact-form" class="contact-form">                        
+                        <ul class="top-form">
+                            <li class="input-top-form"><label for="fname">First Name</label><br><input type="text" name="fname" id="fname" placeholder="Kaitlyn"></li>                            
+                            <li class="input-top-form"><label for="lname">Last name</label><br><input type="text" id="lname" name="lname" placeholder="Lopez"></li>
+                            <li class="input-top-form"><label for="email">Email</label><br><input type="email" name="email" id="email" placeholder="example@mail.com"></li>
+                            <li class="input-top-form"><label for="phone-number">Phone</label><br><input type="tel" name="phone" id="phone" placeholder="+7(777)777-7777"></li>
+                        </ul>
+
+                        <p>What skills do you <span>require?</span></p>
+                        
+                        <ul class="skills">
+                            <li class="jj-1 skill"><label for="myCheckBox" class="checkbox-label"><input class = "checkbox"type="checkbox" name="Web Development" id="myCheckBox" class="contact"><span class="check-box-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span> Web Development</label></li>
+                            <li class="jj-2 skill"><label for="web-design"><input type="checkbox" name="UI/UX Design" id="Design" class="contact">UI/UX Design</label></li>
+                            <li class="jj-3 skill"><label for="proj-mang"><input type="checkbox" name="Project Management" id="proj-mang">Project Management</label></li>
+                            <li class="jj-4 skill"><label for="web-maintance"><input type="checkbox" name="web-maintance" id="web-maintance">Web-Maintance</label></li>                   
+                        </ul>
+                        <ul class="skills">
+                            <li class="kk-1 skill"><label for="Nanny"><input class = "check-kk"type="checkbox" name="Nanny" id="Nanny">Nanny</label></li>
+                            <li class="kk-2 skill"><label for="Babysitting"><input class = "check-kk" type="checkbox" name="Babysitter" id="Baby-Sit">Babysitter</label></li>
+                            <li class="kk-3 skill"><label for="sono"><input class = "check-kk" type="checkbox" name="Ultra-sound-tech" id="Sonographer">Ultra Sound Technician</label></li>
+                            <li class="kk-4 skill"><label for="certfied-nurse"><input class = "check-kk" type="checkbox" name="Certified-Nurse" id="cert-nurse">Certified Nurse</label></li>
+                        </ul>                                                
+                        <br> 
+                        
                     </form>
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="contact-form" cols="30" rows="10" placeholder="Place message here..."></textarea>
                 </div>
             </div>
         </section>
@@ -155,6 +336,7 @@
             <div class="right-col-logo">
 
             </div>
+
         </footer>
     </div>
 
